@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'WorkSans';
+  src: url('../assets/fonts/WorkSans-VariableFont_wght.ttf')
+}
+body{
+  font-family: 'WorkSans', sans-serif;
+  background-color: hsl(277, 81%, 94%);
+  background-image: url(../assets/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-sizing: border-box;
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+}
+
+#border{
+  color: black;
+  opacity: 0.2;
+}
+
+.faq-container{
+  width: 800px;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 1rem;
+  color: hsl(292, 42%, 14%);
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.078);
+  
+}
+
+.faq-headline{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.faq-headline h1{
+  font-size: 3rem;
+}
+
+.question{
+  margin-top: 0.9rem;
+}
+
+.question-btn{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  padding: 0.7rem 0 0.7rem 0;
+  gap: 1rem;
+
+  font-family: 'WorkSans';
+  font-weight: bold;
+  color: hsl(292, 42%, 14%);
+  font-size: 1rem; 
+
+  cursor: pointer;
+  transition: .5s;
+}
+
+.question-btn:hover{
+  color: #AD28EB;
+}
+
+.question-btn p {
+text-align: start;
+}
+
+.question-btn .minus-btn{
+  display: none;
+}
+
+.accordion-content{
+  color: hsl(292, 16%, 49%);
+  margin-bottom: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 200ms ease;
+}
+/* 
+.hide{
+  display: none;
+  opacity: 0;
+} */
